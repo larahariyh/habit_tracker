@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "habit_tracker_backend": {
+      "main": "src/habit_tracker_backend/main.mo",
+      "type": "motoko"
+    },
+    "habit_tracker_frontend": {
+      "dependencies": [
+        "habit_tracker_backend"
+      ],
+      "source": [
+        "src/habit_tracker_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "habit_tracker_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
